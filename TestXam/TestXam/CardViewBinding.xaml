@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TestXam.Views;assembly=TestXam"
+             xmlns:viewModel1="clr-namespace:TestXam.ViewModel;assembly=TestXam"
+             x:Class="TestXam.CardViewBinding">
+
+    <ContentPage.BindingContext>
+        <viewModel1:CardViewModel></viewModel1:CardViewModel>
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical">
+        <Label Text="Google List View"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             BackgroundColor="Transparent"
+             HorizontalOptions="CenterAndExpand"></Label>
+        <ListView x:Name="ListView" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+              RowHeight="150"
+              ItemsSource="{Binding CardCollection}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView>
+                            <view:CardView></view:CardView>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

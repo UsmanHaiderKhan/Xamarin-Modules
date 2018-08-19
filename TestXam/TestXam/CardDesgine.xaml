@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestXam"
+             x:Class="TestXam.CardDesgine"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0" Padding="25" VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <!--<Image Aspect="AspectFill" Source="logo.png" />-->
+            <Image Aspect="Fill" VerticalOptions="End" Source="logo.png" />
+            <!--<Image HeightRequest="100" HorizontalOptions="Center" Source="icon.png" TranslationY="50" VerticalOptions="End" WidthRequest="100" />-->
+
+            <StackLayout Grid.Row="1" Padding="0,50,0,00" HorizontalOptions="Center">
+                <Label HorizontalTextAlignment="Center" Text="SignIn" Style="{StaticResource ProfileNameLabel}" />
+                <Label HorizontalTextAlignment="Center" Margin="0,-5" Style="{StaticResource ProfileTagLabel}" Text="Star War Review" />
+            </StackLayout>
+
+            <Grid Grid.Row="2" RowSpacing="0" ColumnSpacing="0" Margin="0,30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout>
+
+                    <StackLayout.Children>
+                        <Image Source="http://bbcpersian7.com/images/facebook-clipart-png-circle-14.jpg" WidthRequest="50" HeightRequest="50"></Image>
+                    </StackLayout.Children>
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="103" />
+
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Likes" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+                    <StackLayout.Children>
+                        <Image Source="https://lh3.googleusercontent.com/N-AY2XwXafWq4TQWfua6VyjPVQvTGRdz9CKOHaBl2nu2GVg7zxS886X5giZ9yY2qIjPh=w300" WidthRequest="50" HeightRequest="50"></Image>
+                    </StackLayout.Children>
+
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="223" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Follow us" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <StackLayout.Children>
+                        <Image Source="twitter.png" WidthRequest="50" HeightRequest="50"></Image>
+                    </StackLayout.Children>
+
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="603" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Tweet us..!" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+<!--Style="{StaticResource ProfileNameLabel}"-->

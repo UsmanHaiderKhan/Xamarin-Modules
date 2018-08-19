@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestXam.BottomNavigation.BottomNav">
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="1"></RowDefinition>
+            <RowDefinition Height="44"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ContentView x:Name="Placeholder" Grid.Row="0"></ContentView>
+        <BoxView BackgroundColor="#DCDCDC" Grid.Row="1"></BoxView>
+        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Spacing="0" Grid.Column="0" BackgroundColor="AliceBlue">
+                <Image Source="thour.png" WidthRequest="30"></Image>
+                <Label Text="Status" FontSize="10"
+                       HorizontalOptions="Center"></Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="1" BackgroundColor="AliceBlue">
+                <Image Source="cht.png" WidthRequest="30"></Image>
+                <Label Text="Chat" FontSize="10"
+                       HorizontalOptions="Center"></Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped2"></TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="2" BackgroundColor="AliceBlue">
+                <Image Source="call.png" WidthRequest="30"></Image>
+                <Label Text="Calls" FontSize="10"
+                       HorizontalOptions="Center"></Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped3"></TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Grid.Column="3" BackgroundColor="AliceBlue">
+                <Image Source="settings.png" WidthRequest="30"></Image>
+                <Label Text="Setting" FontSize="10"
+                       HorizontalOptions="Center"></Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped4"></TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Spacing="0" Grid.Column="4" BackgroundColor="AliceBlue">
+                <Image Source="cam.png" WidthRequest="30"></Image>
+                <Label Text="Camera" FontSize="10"
+                       HorizontalOptions="Center"></Label>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped5"></TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

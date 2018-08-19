@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestXam.LoginPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        Margin="0,10,0,0">
+                <Label Text="Select Language"></Label>
+                <Image Source="down.png" WidthRequest="12"  Opacity="0.5" VerticalOptions="Start"
+                      Margin="0,3,0,0"></Image>
+            </StackLayout>
+            <Grid Margin="20,0,20,0"
+                 Grid.Row="1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="usman.png"
+                       HeightRequest="70"
+                       VerticalOptions="End"></Image>
+                <Entry Grid.Row="1" PlaceholderColor="#bababa"
+                       Placeholder="Email or Phone No"
+                       FontSize="16"></Entry>
+                <Entry Grid.Row="2" PlaceholderColor="#bababa"
+                       Placeholder="Enter strong Password"
+                       IsPassword="True"
+                       FontSize="16"></Entry>
+                <Button Text="Login"
+                        BackgroundColor="#3897f0"
+                        TextColor="White"
+                        HeightRequest="50"
+                        VerticalOptions="Start"
+                        Grid.Row="3"></Button>
+                <Label Text="Get Trouble ? Get Help by signin"
+                       HorizontalOptions="Center"
+                       Grid.Row="4"
+                       FontSize="12"
+                       Margin="0,10,0,0"></Label>
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label BackgroundColor="#bababa"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center"
+                           HeightRequest="1"></Label>
+                    <Label Text="OR" Grid.Column="1"
+                           VerticalOptions="Center"
+                           Margin="10,0,10,0"></Label>
+                    <Label BackgroundColor="#bababa"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center"
+                           HeightRequest="1"
+                           Grid.Column="2"></Label>
+                </Grid>
+                <StackLayout Orientation="Horizontal"
+                            HorizontalOptions="Center"
+                            Grid.Row="6">
+                    <Image Source="twitter.png" WidthRequest="35" HeightRequest="35"></Image>
+                    <Label Text="Login With Twitter" TextColor="#485992" Margin=""></Label>
+                </StackLayout>
+            </Grid>
+            <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
+                <Label HeightRequest="1" BackgroundColor="#E3E3E3"></Label>
+                <Label Text="Don't have Account?SignUp"
+                       VerticalOptions="FillAndExpand"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
