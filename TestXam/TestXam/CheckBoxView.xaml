@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             xmlns:control1="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="TestXam.CheckBoxView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Sehdule Day Task...!"
+                FontSize="Large" 
+                HorizontalOptions="Start" />
+            <control1:CheckBox DefaultText="HEllo USman"
+                               ></control1:CheckBox>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
