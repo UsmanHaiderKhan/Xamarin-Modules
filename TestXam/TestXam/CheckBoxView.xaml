@@ -10,7 +10,9 @@
                 FontSize="Large" 
                 HorizontalOptions="Start" />
             <control1:CheckBox DefaultText="HEllo USman"
-                               ></control1:CheckBox>
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="18"
+                               FontName="Amerciantypewrite"></control1:CheckBox>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
