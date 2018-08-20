@@ -11,7 +11,7 @@ namespace TestXam
         {
             InitializeComponent();
 
-            MainPage = new MusicPlayer();
+            MainPage = new CardDesgine();
             // MainPage = new NavigationPage(new SplashPage());
         }
 
