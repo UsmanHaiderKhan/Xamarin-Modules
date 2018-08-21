@@ -11,7 +11,7 @@ namespace TestXam
         {
             InitializeComponent();
 
-            MainPage = new checkbo();
+            MainPage = new CheckBoxView();
             // MainPage = new NavigationPage(new SplashPage());
         }
 
