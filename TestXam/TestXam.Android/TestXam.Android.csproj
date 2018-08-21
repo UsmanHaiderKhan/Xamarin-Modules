@@ -159,16 +159,13 @@
     <AndroidResource Include="Resources\drawable\down.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\insta.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TestXam\TestXam.csproj">
       <Project>{9bf9b59f-9eac-4db2-ba7e-70c4c1516d5e}</Project>
       <Name>TestXam</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\gram.png" />
+    <AndroidResource Include="Resources\drawable\insta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
