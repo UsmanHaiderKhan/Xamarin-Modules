@@ -11,7 +11,7 @@ namespace TestXam
         {
             InitializeComponent();
 
-            MainPage = new CardDesgine();
+            MainPage = new InstagrameSignup();
             // MainPage = new NavigationPage(new SplashPage());
         }
 
