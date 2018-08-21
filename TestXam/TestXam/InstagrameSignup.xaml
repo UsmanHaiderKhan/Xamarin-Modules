@@ -22,7 +22,7 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Image Source="gram.png"
+                <Image Source="insta.jpg"
                        VerticalOptions="CenterAndExpand"  
                        HorizontalOptions="CenterAndExpand"></Image>
                 <Button Margin="10,0,10,0" 
