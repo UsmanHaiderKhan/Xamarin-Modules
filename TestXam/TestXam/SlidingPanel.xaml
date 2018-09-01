@@ -8,8 +8,17 @@
 
                 <Image Source="" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
             </StackLayout>
-            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout x:Name="body" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
+                         Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand">
 
+
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Label Text="Sliding Panel" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    <Image Source="" Aspect="AspectFill" ></Image>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
