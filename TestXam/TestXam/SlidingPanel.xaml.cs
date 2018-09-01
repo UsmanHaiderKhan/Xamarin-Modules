@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,6 +11,15 @@ namespace TestXam
         public SlidingPanel()
         {
             InitializeComponent();
+            body.TranslationY = Main.Height + 500;
+
+        }
+
+        private async void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+        {
+            var initialPosition = Main.Height;
+            var currentPosition = body.Height;
+            await body.TranslateTo(0, (initialPosition - currentPosition) * 1, 500, Easing.SinIn);
         }
     }
 }
