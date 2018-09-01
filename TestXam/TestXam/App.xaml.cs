@@ -11,7 +11,7 @@ namespace TestXam
         {
             InitializeComponent();
 
-            MainPage = new XListView();
+            MainPage = new SlidingPanel();
             // MainPage = new NavigationPage(new SplashPage());
         }
 
