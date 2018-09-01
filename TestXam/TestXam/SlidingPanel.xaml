@@ -6,7 +6,7 @@
         <AbsoluteLayout VerticalOptions="FillAndExpand" x:Name="Main">
             <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" x:Name="main" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
-                <Image Source="" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+                <Image Source="usman.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
             </StackLayout>
             <StackLayout x:Name="body" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"
                          Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand">
@@ -14,7 +14,7 @@
 
                 <StackLayout VerticalOptions="FillAndExpand">
                     <Label Text="Sliding Panel" VerticalOptions="Center" HorizontalOptions="Center"></Label>
-                    <Image Source="" Aspect="AspectFill" ></Image>
+                    <Image Source="panel.jpg" Aspect="AspectFill" ></Image>
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
                     </StackLayout.GestureRecognizers>
